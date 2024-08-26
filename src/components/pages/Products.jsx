@@ -1,4 +1,4 @@
-import ProductMini from "./ProductMini";
+import ProductMini from "../ProductMini";
 
 const data = [
   {

@@ -1,12 +1,15 @@
-import Home from "./components/Home.jsx";
-import About from "./components/About.jsx";
+import Home from "./components/pages/Home.jsx";
+import About from "./components/pages/About.jsx";
 import Pricing from "./components/Pricing.jsx";
-import Support from "./components/Support.jsx";
-import Products from "./components/Products.jsx";
+import Support from "./components/pages/Support.jsx";
+import Products from "./components/pages/Products.jsx";
 import { BrowserRouter , Routes , Route } from "react-router-dom";
-import ErrorPage from "./components/ErrorPage.jsx";
+import ErrorPage from "./components/pages/ErrorPage.jsx";
 import Navbar from "./components/Navbar.jsx";
 import Footer from "./components/Footer.jsx";
+import SignUp from "./components/pages/SignUp.jsx";
+import Login from "./components/pages/Login.jsx";
+
 
 
 export default function App(){
@@ -21,6 +24,8 @@ export default function App(){
         <Route path="/pricing" element={<Pricing />} />
         <Route path="/support" element={<Support />} />
         <Route path="/products" element={<Products />} />
+        <Route path="/signup" element={<SignUp />} />
+        <Route path="/login" element={<Login />} />
 
         <Route path="*"  element={<ErrorPage />} />
       </Routes>
