@@ -12,7 +12,7 @@ const SignUp = () => {
 
   const changeEventHandler = (e) => {
     setInput({ ...input, [e.target.name]: e.target.value });
-    console.log(input)
+    // console.log(input)
 }
 
 const signupHandler = async (e) => {
@@ -23,7 +23,7 @@ const signupHandler = async (e) => {
 }
   try {
       setLoading(true);
-      const res = await axios.post('http://localhost:5000/api/v1/auth/signup', input, {
+      const res = await axios.post(`${import.meta.env.VITE_BACKEND_URL}/auth/signup`, input, {
           headers: {
               'Content-Type': 'application/json'
           },
