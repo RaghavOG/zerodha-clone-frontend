@@ -9,6 +9,7 @@ import Navbar from "./components/Navbar.jsx";
 import Footer from "./components/Footer.jsx";
 import SignUp from "./components/pages/SignUp.jsx";
 import Login from "./components/pages/Login.jsx";
+import Special from "./components/pages/Special.jsx";
 
 
 
@@ -25,7 +26,8 @@ export default function App(){
         <Route path="/support" element={<Support />} />
         <Route path="/products" element={<Products />} />
         <Route path="/signup" element={<SignUp />} />
-        <Route path="/login" element={<Login />} />
+        <Route path="/signin" element={<Login />} />
+        <Route path="/special" element={<Special />} />
 
         <Route path="*"  element={<ErrorPage />} />
       </Routes>
